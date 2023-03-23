@@ -28,11 +28,13 @@ export default function Sidebar() {
         
             )
         }       
-        <div className={`Sidebar top-0 left-0 fixed  w-[26vw] h-full p-5  ${isOpen ? "-translate-x-0 " : "-translate-x-full"} ease-in-out duration-700 text-2xl text-white p-4 flex-col flex items-center justify-center space-y-16 `}>
-            <img src= {EP} alt="picture of me" className="meSidebar"/>
-            <p className="">About</p>
+        <div className={`Sidebar top-0 left-0 fixed  w-[26vw] h-full p-5  ${isOpen ? "-translate-x-0 " : "-translate-x-full"} ease-in-out duration-700 text-2xl text-white p-4 flex-col flex items-center justify-center space-y-12 `}>
+            <img src= {EP} alt="picture of me" className="meSidebar h-56"/>
+            <p>About</p>
             <p>Projects</p>
+            <p>Skills</p>
             <p>Contact</p>
+            
 
         </div>
         </>
