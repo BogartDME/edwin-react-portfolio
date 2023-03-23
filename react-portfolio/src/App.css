@@ -1,0 +1,23 @@
+:root {
+
+  --grey: #9FB1B3;
+  --Lgreen: #0A6B4C;
+  --Dgreen: #193E3D;
+  --black: #293138;
+  --red: #AF3E4D;
+  --blue: #3A3E5B
+}
+
+
+body {
+  background-color:var(--black) ;
+  color: azure;
+}
+
+
+.Sidebar {
+  background: linear-gradient(#0A6B4C, #193E3D, #3A3E5B) !important;
+} 
+
+
+
