@@ -19,5 +19,7 @@ body {
   background: linear-gradient(#0A6B4C, #193E3D, #3A3E5B) !important;
 } 
 
-
-
+#Logo {
+  height: 100px !important;
+  width: 200px !important;
+}

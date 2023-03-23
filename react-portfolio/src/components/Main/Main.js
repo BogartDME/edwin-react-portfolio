@@ -11,7 +11,7 @@ function Main() {
     </div>
 
     <div className="flex-col items-center">
-        <p className="py-32 text-3xl">"The creative adult is the child who survived." 
+        <p className="py-12 text-2xl">"The creative adult is the child who survived." 
         <p>- ​​Ursula Le Guin</p>
         </p>
     </div>
