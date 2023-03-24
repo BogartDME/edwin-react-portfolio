@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { checkEmail } from '../../utils/helpers';
 
-function Contact() {
+export default function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
     const [errorMessage, setErrorMessage] = useState('');
@@ -61,5 +61,3 @@ function Contact() {
         </section>
     );
 }
-
-export default Contact;

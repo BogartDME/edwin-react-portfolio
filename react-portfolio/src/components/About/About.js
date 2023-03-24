@@ -2,7 +2,7 @@ import React from "react";
 import RLcar from "../../assets/images/RLcar.PNG"
 
 
-function About() {
+export default function About() {
     return (
         <container className="space-y-16 flex flex-col items-center">
             <div className="space-y-16">
@@ -31,4 +31,3 @@ function About() {
     );
 }
 
-export default About;

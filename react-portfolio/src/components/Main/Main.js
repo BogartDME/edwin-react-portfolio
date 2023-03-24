@@ -2,7 +2,7 @@ import React from "react";
 import BogartLogo from "../../assets/images/BogartLogo.PNG"
 
 
-function Main() {
+export default function Main() {
     return (
 <container className=" pl-20 flex flex-col items-center">
     <div className="justify-center">
@@ -18,4 +18,3 @@ function Main() {
     );
 }
 
-    export default Main;

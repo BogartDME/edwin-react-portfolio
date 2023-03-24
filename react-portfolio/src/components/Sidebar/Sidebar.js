@@ -3,6 +3,7 @@ import EP from "../../assets/images/EP.JPG"
 
 export default function Sidebar() {
     const [isOpen, setIsOpen]= useState(false);
+    const [openMenu, setOpenMenu]= useState(false);
     return (
         <>
         {!isOpen ?
@@ -28,15 +29,24 @@ export default function Sidebar() {
         
             )
         }       
-        <div className={`Sidebar top-0 left-0 fixed  w-[26vw] h-full p-5  ${isOpen ? "-translate-x-0 " : "-translate-x-full"} ease-in-out duration-700 text-2xl text-white p-4 flex-col flex items-center justify-center space-y-12 `}>
+        <div className={`Sidebar top-0 left-0 fixed  w-[26vw] h-full p-5  ${isOpen ?     "-translate-x-0 " : "-translate-x-full"} ease-in-out duration-700 text-2xl text-white p-4 flex-col flex items-center justify-center space-y-12 `}>
             <img src= {EP} alt="picture of me" className="meSidebar h-56"/>
-            <p>About</p>
-            <p>Projects</p>
-            <p>Skills</p>
-            <p>Contact</p>
-            
-
+            <ul>
+                <li Onclick={() => setOpenMenu(false)}>
+                    <a href= "about">About</a>
+                </li>
+                <li Onclick={() => setOpenMenu(false)}>
+                <a href= "projects">Projects</a>
+                </li>
+                <li Onclick={() => setOpenMenu(false)}>
+                    <a href= "skills">Skills</a>
+                </li>
+                <li Onclick={() => setOpenMenu(false)}>
+                    <a href= "contact">Contacts</a>
+                </li>
+            </ul>
         </div>
+
         </>
     )
 }
