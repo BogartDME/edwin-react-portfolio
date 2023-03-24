@@ -6,7 +6,9 @@ module.exports = {
       "ashGray": "#9FB1B3",
       "blue": "#3A3E5B",
       "darkGreen": "#193E3D",
-      "lightGreen": "#0A6B4C"
+      "lightGreen": "#0A6B4C",
+      "redWood": "#AF3E4D",
+      "yellowMin": "#F8FA90"
 
     },
     extend: {

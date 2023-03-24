@@ -36,28 +36,28 @@ export default function Contact() {
     };
 
     return (
-        <section>
-        <h1 data-testid="h1tag">Contact me</h1>
-        <form id="contact-form" onSubmit={handleSubmit}>
-            <div>
-            <label htmlFor="name">Name:</label>
-            <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-            </div>
-            <div>
-            <label htmlFor="email">Email address:</label>
-            <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-            </div>
-            <div>
-            <label htmlFor="message">Message:</label>
-            <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-            </div>
-            {errorMessage && (
-            <div>
-                <p className="error-text">{errorMessage}</p>
-            </div>
-            )}
-            <button data-testid="button" type="submit">Submit</button>
-        </form>
+        <section className="space-y-16 flex flex-col items-center ">
+            <h1 className="text-4xl pt-12 text-lightGreen">Contact me</h1>
+            <form className='w-full max-w-sm border border-lightGreen  p-4 bg-ashGray border-lightGreen rounded-lg shadow sm:p-10 md:p-8 dark:bg-gray-800 dark:border-lightGreen' id="contact-form" onSubmit={handleSubmit}>
+                <div>
+                    <label for="name" defaultValue={name} class="block mb-1 text-lg font-medium text-gunMetal dark:text-lightGreen">Name</label>
+                    <input type="text" id="name" class="mb-4 bg-gray-50 border border-gray-300 text-gunMetal text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Name" required onBlur={handleChange}></input>
+                </div>
+                <div>
+                    <label for="name" defaultValue={email} class="block mb-1 text-lg font-medium text-gunMetal dark:text-lightGreen">Email</label>
+                    <input type="text" id="name" class="mb-4 bg-gray-50 border border-gray-300 text-gunMetal text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Email" required onBlur={handleChange}></input>
+                </div>
+                <div>
+                    <label for="name" defaultValue={message} class="block mb-1 text-lg font-medium text-gunMetal dark:text-lightGreen">Message</label>
+                    <input type="text" id="name" class="mb-4 bg-gray-50 border border-gray-300 text-gunMetal text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-red dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message" required onBlur={handleChange}></input>
+                </div>
+                {errorMessage && (
+                    <div>
+                        <p className="error-text">{errorMessage}</p>
+                    </div>
+                )}
+                <button className="text-3xl text-lightGreen" type="submit">Submit</button>
+            </form>
         </section>
     );
 }
