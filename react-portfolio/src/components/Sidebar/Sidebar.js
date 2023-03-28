@@ -22,7 +22,7 @@ export default function Sidebar() {
             </button>
             ) :
             (
-            <button className="text-xl text-white fixed top-4 left-4 z-10"
+            <button className="text-xl text-white fixed top-4 left-4 z-10 active:text-redWood"
                 onClick={() => setIsOpen(!isOpen)}>
                     x
             </button>        
@@ -30,18 +30,18 @@ export default function Sidebar() {
             )
         }       
         <div className={`Sidebar top-0 left-0 fixed  w-[26vw] h-full p-5  ${isOpen ?     "-translate-x-0 " : "-translate-x-full"} ease-in-out duration-700 text-2xl text-white p-4 flex-col flex items-center justify-center space-y-12 `}>
-            <img src= {EP} alt="picture of me" className="meSidebar h-56"/>
+            <img src= {EP} alt="picture of me" className="meSidebar rounded-2xl h-56"/>
             <ul>
-                <li Onclick={() => setOpenMenu(false)}>
+                <li className="py-8 active:text-redWood hover:text-yellowGreen" Onclick={() => setOpenMenu(false)}>
                     <a href= "about">About</a>
                 </li>
-                <li Onclick={() => setOpenMenu(false)}>
+                <li className="py-8 active:text-redWood hover:text-yellowGreen" Onclick={() => setOpenMenu(false)}>
                 <a href= "projects">Projects</a>
                 </li>
-                <li Onclick={() => setOpenMenu(false)}>
+                <li className="py-8 active:text-redWood hover:text-yellowGreen" Onclick={() => setOpenMenu(false)}>
                     <a href= "skills">Skills</a>
                 </li>
-                <li Onclick={() => setOpenMenu(false)}>
+                <li className="py-8 active:text-redWood hover:text-yellowGreen" Onclick={() => setOpenMenu(false)}>
                     <a href= "contact">Contacts</a>
                 </li>
             </ul>
