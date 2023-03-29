@@ -1,6 +1,7 @@
 
 import React,{useState} from 'react';
 import RLcar from "../../assets/images/RLcar.PNG"
+// import resume from "../../assets/resume/resume.pdf"
 
 export default function About() {
     const [readMore1,setReadMore1]=useState(false);
@@ -38,7 +39,17 @@ export default function About() {
                 <a className="read-more-link space-y-12" onClick={()=>{setReadMore1(!readMore1)}}><h2>{aboutMe}</h2></a>
                 {readMore1 && extraContent1}
             </div>
-    
+
+            <div className="resume-card card rounded-lg">
+                <h3 className="top">Resume</h3>
+                <div className="middle">
+                    <p>Web Developer leveraging a background in customer service to deliver performative and innovative solutions to satisfy customer needs. Often appointed by leadership roles to train new employees and take the initiative to deliver on sales, as well as meeting project deadlines. Enjoys creative and collaborative group work to deliver exemplary products to exceed client expectations</p>
+                </div>
+                <div className="resume-download">
+                    {/* <button><a href={resume} download="Edwin Pietrowski Resume">Download Resume</a></button> */}
+                </div>
+            </div>
+
                 <img src= {RLcar} alt="picture of me" className="meAbout justify-self-end h-80 w-60"/>
             
             <div className="">
