@@ -45,15 +45,24 @@ export default function About() {
                 {readMore1 && extraContent1}
             </div>
 
-            <div className="resume-card card rounded-lg">
-                <h3 className="top">Resume</h3>
-                <div className="middle">
-                    <p>Web Developer leveraging a background in customer service to deliver performative and innovative solutions to satisfy customer needs. Often appointed by leadership roles to train new employees and take the initiative to deliver on sales, as well as meeting project deadlines. Enjoys creative and collaborative group work to deliver exemplary products to exceed client expectations</p>
+        <container className="w-96 bg-gradient-to-b from-blue via-redWood to-darkGreen">
+            <div floated={false} className="h-80">
+                <img src="/img/team-3.jpg" alt="profile-picture" />
+            </div>
+            <div className="text-center bg-gradient-to-b from-gunMetal via-ashGray to-gunMetal">
+                <div className="h4" color="blue mb-2">
+                    <button className='bg-greenYellow'>
+                    Download Resume
+                    </button>
                 </div>
-                <div className="resume-download">
-                    {/* <button><a href={resume} download="Edwin Pietrowski Resume">Download Resume</a></button> */}
+                <div className="font-medium" textGradient>
                 </div>
             </div>
+            <footer className="flex justify-center gap-7 pt-2">
+            </footer>
+        </container>
+  );
+}
 
                 <img src= {RLcar} alt="picture of me" className="meAbout justify-self-end h-80 w-60"/>
             
