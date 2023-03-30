@@ -37,7 +37,7 @@ export default function Contact() {
 
     return (
         <section className="space-y-16 flex flex-col items-center ">
-            <h1 className="text-4xl pt-12 text-lightGreen">Contact me</h1>
+            <h1 className="font-bold text-6xl pt-12 text-lightGreen">Contact me</h1>
             <form className='w-full max-w-sm border border-lightGreen  p-4 bg-gradient-to-r from-ashGray to- border-4 gradient-lightGreen rounded-2xl shadow sm:p-10 md:p-8 dark:bg-gray-800 dark:border-lightGreen' id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label for="name" defaultValue={name} class="block mb-1 text-lg font-medium text-gunMetal dark:text-lightGreen">Name</label>
