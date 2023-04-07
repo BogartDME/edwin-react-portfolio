@@ -29,7 +29,7 @@ export default function Sidebar() {
         
             )
         }       
-        <div className={`Sidebar top-0 left-0 fixed  w-[26vw] h-full p-5  ${isOpen ?     "-translate-x-0 " : "-translate-x-full"} ease-in-out duration-700 text-2xl text-white p-4 flex-col flex items-center justify-center space-y-12 `}>
+        <div className={`Sidebar top-0 left-0 fixed  w-[26vw] flex flex-col p-5  ${isOpen ?     "-translate-x-0 " : "-translate-x-full"} ease-in-out duration-700 text-2xl text-white p-4 flex-col flex items-center justify-center space-y-12 `}>
             <img src= {EP} alt="picture of me" className="meSidebar rounded-2xl h-56"/>
             <ul>
                 <li className="py-8 active:text-redWood hover:text-yellowGreen" Onclick={() => setOpenMenu(false)}>
@@ -39,10 +39,7 @@ export default function Sidebar() {
                 <a href= "projects">Projects</a>
                 </li>
                 <li className="py-8 active:text-redWood hover:text-yellowGreen" Onclick={() => setOpenMenu(false)}>
-                    <a href= "skills">Skills</a>
-                </li>
-                <li className="py-8 active:text-redWood hover:text-yellowGreen" Onclick={() => setOpenMenu(false)}>
-                    <a href= "contact">Contacts</a>
+                    <a href= "contact">Contact</a>
                 </li>
             </ul>
         </div>

@@ -5,7 +5,7 @@
 //         <div>
 //             <Navbar>
 //                 <Nav>
-//                     <Nav.Item className="">
+//                     <Nav.Item className="flex flex-col max-h-full">
 //                         <Link to='/about' className="links">
 //                             About
 //                         </Link>
