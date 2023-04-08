@@ -12,13 +12,8 @@
     - [Built With](#built-with)
     - [Visuals](#visuals)
   - [Access](#access)
-  - [Getting Started](#getting-started)
-    - [Installation](#installation)
-    - [Testing](#test)
-  - [Usage](#usage)
-  - [Contributions](#contributions)
   - [Contact](#contact)
-  - [Resources](#resources)
+ 
   
 
   </details>
