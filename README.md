@@ -44,7 +44,7 @@
   ### Visuals
   
   
-  ![Alt full site image](./)
+  ![Alt full site image](./src/assets/images/Screen%20Shot%202023-04-07%20at%209.56.11%20PM.png)
 
 
 
@@ -64,12 +64,6 @@
 
 
 
-## Getting Started
-
-Here are some some things you will need to get started:
-
-
-
 ## Contact
 
   If you would like to contact me with suggestions or would like to collaborate on a project feel free to contact me at edwin.pietrowski@gmail.com
@@ -77,11 +71,6 @@ Here are some some things you will need to get started:
   Also please feel free to check out my Github to see other apps I have worked on: [BogartDME](https://github.com/(BogartDME)
 
 
-
-
-## Resources
-
-  Here is a list of the resources that I used for the project N/A
 
 
   <p align="middle">(<a href="#readme-top">back to top</a>)</p>
